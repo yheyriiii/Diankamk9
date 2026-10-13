@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dian Kan K9 | Escuela Canina y Pensión Libre de Jaulas - La Pradera, Querétaro</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        k9yellow: '#FFC107',
+                        k9gold: '#D4AF37',
+                        k9dark: '#0a0a0a',
+                        k9card: '#141414',
+                        k9border: '#242424',
+                        k9accent: '#e63946'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-border {
+            border: 2px solid #D4AF37;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF099 0%, #FFC107 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-k9-pattern {
+            background-color: #0a0a0a;
+            background-image: radial-gradient(#1f1f1f 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .gold-shadow {
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-k9dark text-gray-100 font-sans antialiased bg-k9-pattern min-h-screen flex flex-col justify-between selection:bg-k9gold selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-k9dark/95 backdrop-blur-md border-b border-k9gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Branding Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-k9yellow to-k9gold text-k9dark rounded-full flex items-center justify-center font-black text-xl shadow-lg shadow-k9gold/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-dog text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black tracking-wider block gold-gradient-text">DIAN KAN K9</span>
+                        <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase block">Pasión por el K9 • Querétaro</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-wider">
+                    <a href="#inicio" class="hover:text-k9yellow transition-colors">Inicio</a>
+                    <a href="#servicios" class="hover:text-k9yellow transition-colors">Servicios</a>
+                    <a href="#pension" class="hover:text-k9yellow transition-colors">Pensión</a>
+                    <a href="#requisitos" class="hover:text-k9yellow transition-colors">Requisitos</a>
+                    <a href="#videos" class="hover:text-k9yellow transition-colors">Videos</a>
+                    <a href="#ubicacion" class="hover:text-k9yellow transition-colors">Ubicación</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <a href="https://wa.me/524427786447?text=Hola,%20quisiera%20pedir%20informes%20sobre%20sus%20servicios" target="_blank" class="hidden sm:inline-flex items-center space-x-2 bg-green-600 hover:bg-green-500 text-white font-bold py-2.5 px-5 rounded-full shadow-lg transition-transform hover:scale-105 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>442 778 6447</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative py-16 lg:py-24 overflow-hidden border-b border-k9border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-block bg-k9yellow/10 border border-k9yellow/40 px-4 py-1.5 rounded-full text-k9yellow font-bold text-xs uppercase tracking-widest shadow-inner">
+                        <i class="fa-solid fa-award mr-1"></i> Instructor K9 Jorge Sánchez
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none uppercase">
+                        ¡Transforma la convivencia con tu <span class="gold-gradient-text">mejor amigo!</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 max-w-xl mx-auto lg:mx-0">
+                        Entrenamiento para una vida feliz y equilibrada. Seguridad real y resultados reales para cualquier raza de perro en Querétaro.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="https://wa.me/524427786447?text=Hola%20Instructor%20Jorge,%20me%20gustaría%20agendar%20una%20valoración" target="_blank" class="bg-gradient-to-r from-k9yellow to-k9gold hover:brightness-110 text-k9dark font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all text-center uppercase tracking-wider text-sm flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Solicitar Valoración
+                        </a>
+                        <a href="#pension" class="border-2 border-k9gold text-k9gold hover:bg-k9gold hover:text-k9dark font-extrabold px-8 py-4 rounded-xl transition-all text-center uppercase tracking-wider text-sm flex items-center justify-center">
+                            Pensión Libre de Jaulas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Featured Hero Banner Card -->
+                <div class="relative flex justify-center">
+                    <div class="bg-k9card p-4 rounded-3xl border-2 border-k9gold/40 gold-shadow max-w-md w-full relative">
+                        <div class="absolute -top-3 -right-3 bg-k9accent text-white font-black text-xs px-4 py-1.5 rounded-full uppercase shadow-lg tracking-wider">
+                            Querétaro K9
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Entrenamiento Canino Dian Kan K9" class="rounded-2xl w-full h-80 object-cover mb-4 filter brightness-95">
+                        <div class="space-y-2 text-center">
+                            <h3 class="text-xl font-bold text-k9yellow">Escuela & Pensión Canina DIAN KAN K9</h3>
+                            <p class="text-sm text-gray-300"><i class="fa-solid fa-location-dot text-k9yellow mr-1"></i> Calle Puma 05, La Pradera, Querétaro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Services Section -->
+    <section id="servicios" class="py-16 bg-black/40 border-b border-k9border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-black text-white uppercase tracking-wider">Servicios <span class="gold-gradient-text">Especializados K9</span></h2>
+                <p class="text-gray-400 mt-2">Programas integrales adaptados a las necesidades específicas de cada ejemplar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1: Pensión -->
+                <div class="bg-k9card p-8 rounded-3xl border border-k9border hover:border-k9gold/60 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-k9yellow/20 text-k9yellow rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-k9yellow group-hover:text-k9dark transition-all">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-white mb-3">Pensión Canina Libre de Jaulas</h3>
+                        <p class="text-gray-300 mb-6">
+                            Tu mascota disfrutará de un ambiente totalmente seguro, cómodo y familiar. Dormitorios individuales con camas confortables, paseos y convivencia bajo constante supervisión 24/7 sin encierros molestos.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-400 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-k9yellow mr-2"></i> Ambiente libre de estrés y jaulas</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-k9yellow mr-2"></i> Reportes continuos de fotos y videos</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-k9yellow mr-2"></i> Supervisión capacitada las 24 horas</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/524427786447?text=Hola,%20me%20interesa%20la%20Pensión%20Canina%20Libre%20de%20Jaulas" target="_blank" class="inline-block text-center w-full bg-k9border hover:bg-k9gold hover:text-k9dark text-white font-bold py-3 rounded-xl transition-all uppercase tracking-wider text-xs">
+                        Consultar Disponibilidad de Pensión
+                    </a>
+                </div>
+
+                <!-- Service 2: Adiestramiento -->
+                <div class="bg-k9card p-8 rounded-3xl border border-k9border hover:border-k9gold/60 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-k9yellow/20 text-k9yellow rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-k9yellow group-hover:text-k9dark transition-all">
+                            <i class="fa-solid fa-shield-dog"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-white mb-3">Adiestramiento y Especialidades K9</h3>
+                        <p class="text-gray-300 mb-6">
+                            Entrenamiento profesional orientado al desarrollo físico, mental y emocional del perro para todas las razas y edades.
+                        </p>
+                        <div class="grid grid-cols-2 gap-3 text-xs text-gray-300 mb-6">
+                            <div class="bg-black/40 p-2.5 rounded-lg border border-gray-800"><i class="fa-solid fa-paw text-k9yellow mr-1"></i> Modificación de Conducta</div>
+                            <div class="bg-black/40 p-2.5 rounded-lg border border-gray-800"><i class="fa-solid fa-paw text-k9yellow mr-1"></i> Obediencia Básica y Avanzada</div>
+                            <div class="bg-black/40 p-2.5 rounded-lg border border-gray-800"><i class="fa-solid fa-paw text-k9yellow mr-1"></i> Fobias a Ruidos / Truenos</div>
+                            <div class="bg-black/40 p-2.5 rounded-lg border border-gray-800"><i class="fa-solid fa-paw text-k9yellow mr-1"></i> Guardia y Protección</div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/524427786447?text=Hola,%20quiero%20informes%20de%20Adiestramiento%20K9" target="_blank" class="inline-block text-center w-full bg-k9border hover:bg-k9gold hover:text-k9dark text-white font-bold py-3 rounded-xl transition-all uppercase tracking-wider text-xs">
+                        Agendar Diagnóstico K9
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requisitos" class="py-16 bg-k9dark border-b border-k9border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-k9card via-black to-k9card rounded-3xl border-2 border-k9gold/40 p-8 lg:p-12 shadow-2xl">
+                <div class="max-w-3xl mx-auto text-center space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-k9yellow/20 text-k9yellow border border-k9yellow/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Reglamento Oficial
+                    </div>
+                    <h2 class="text-3xl font-black text-white uppercase tracking-wider">Requisitos e Información Importante</h2>
+                    <p class="text-gray-300 text-sm">
+                        Para garantizar la máxima seguridad, bienestar e higiene de todos los caninos hospedados:
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left pt-4">
+                        <div class="bg-black/60 p-5 rounded-2xl border border-gray-800 space-y-2">
+                            <h4 class="text-k9yellow font-bold uppercase text-sm flex items-center">
+                                <i class="fa-solid fa-notes-medical mr-2 text-lg"></i> Cartilla de Vacunación
+                            </h4>
+                            <p class="text-xs text-gray-300">
+                                Es de carácter <strong>completamente obligatorio</strong> presentar la cartilla de vacunación y desparasitación actualizada antes del ingreso.
+                            </p>
+                        </div>
+
+                        <div class="bg-black/60 p-5 rounded-2xl border border-gray-800 space-y-2">
+                            <h4 class="text-k9accent font-bold uppercase text-sm flex items-center">
+                                <i class="fa-solid fa-ban mr-2 text-lg"></i> Restricciones Sanitarias
+                            </h4>
+                            <p class="text-xs text-gray-300">
+                                Por higiene y sana convivencia <strong>NO se aceptan hembras en celo ni machos sin castrar</strong> en el área de pensión.
+                            </p>
+                        </div>
+
+                        <div class="bg-black/60 p-5 rounded-2xl border border-gray-800 space-y-2">
+                            <h4 class="text-k9yellow font-bold uppercase text-sm flex items-center">
+                                <i class="fa-regular fa-clock mr-2 text-lg"></i> Horarios de Atención
+                            </h4>
+                            <p class="text-xs text-gray-300">
+                                El horario para solicitar informes, reportes, fotografías y videos de su mascota es estrictamente de <strong>9:00 a.m. a 7:00 p.m.</strong>
+                            </p>
+                        </div>
+
+                        <div class="bg-black/60 p-5 rounded-2xl border border-gray-800 space-y-2">
+                            <h4 class="text-k9yellow font-bold uppercase text-sm flex items-center">
+                                <i class="fa-solid fa-map-pin mr-2 text-lg"></i> Ubicación Física
+                            </h4>
+                            <p class="text-xs text-gray-300">
+                                Instalaciones ubicadas en <strong>Calle Puma 05, La Pradera, Querétaro</strong>. Atención únicamente con cita previa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Video Section -->
+    <section id="videos" class="py-16 bg-black/50 border-b border-k9border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-black text-white uppercase tracking-wider">Trabajo en <span class="gold-gradient-text">Campo & Demostraciones</span></h2>
+                <p class="text-gray-400 mt-2">Muestras reales de nuestros métodos de trabajo y adiestramiento práctico.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Video Module 1 -->
+                <div class="bg-k9card rounded-3xl overflow-hidden border border-k9border shadow-xl flex flex-col">
+                    <div class="relative pt-[56.25%] bg-black">
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Búsqueda y Detección K9" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block bg-k9yellow/20 text-k9yellow font-bold text-xs px-3 py-1 rounded-md mb-2">Especialidad K9</span>
+                        <h3 class="text-xl font-bold text-white mb-2">Búsqueda y Detección K9</h3>
+                        <p class="text-sm text-gray-400">Demostración de focalización e impulso olfativo en campo abierto bajo el mando del Instructor Jorge Sánchez.</p>
+                    </div>
+                </div>
+
+                <!-- Video Module 2 -->
+                <div class="bg-k9card rounded-3xl overflow-hidden border border-k9border shadow-xl flex flex-col">
+                    <div class="relative pt-[56.25%] bg-black">
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Obediencia en Tarima" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block bg-k9yellow/20 text-k9yellow font-bold text-xs px-3 py-1 rounded-md mb-2">Obediencia Urbana</span>
+                        <h3 class="text-xl font-bold text-white mb-2">Obediencia en Tarima y Permanencia</h3>
+                        <p class="text-sm text-gray-400">Trabajos de control de estímulos, enfoque y estabilidad en espacios urbanos y parques públicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="ubicacion" class="py-16 bg-k9dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-black text-white uppercase tracking-wider">Ubícanos en <span class="gold-gradient-text">La Pradera</span></h2>
+                    <p class="text-gray-300">
+                        Visítanos en nuestras instalaciones o solicita valoración previa para integrarte a nuestros grupos de adiestramiento.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-k9yellow/20 text-k9yellow rounded-lg flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white uppercase text-sm">Dirección Completa</h4>
+                                <p class="text-gray-300 text-sm">Calle Puma 05, La Pradera, Querétaro.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-k9yellow/20 text-k9yellow rounded-lg flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white uppercase text-sm">Contacto Directo / WhatsApp</h4>
+                                <p class="text-gray-300 text-sm">442 778 6447</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-k9yellow/20 text-k9yellow rounded-lg flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-user-gear text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white uppercase text-sm">Instructor Responsable</h4>
+                                <p class="text-gray-300 text-sm">Instructor K9 Jorge Sánchez</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/524427786447?text=Hola,%20quisiera%20pedir%20informes%20de%20ubicación" target="_blank" class="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-500 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span class="uppercase tracking-wider text-sm">Enviar WhatsApp Directo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="bg-k9card p-3 rounded-3xl border border-k9border shadow-2xl h-96">
+                    <iframe class="w-full h-full rounded-2xl filter grayscale contrast-125 brightness-90" src="https://maps.google.com/maps?q=La+Pradera+Queretaro+Calle+Puma&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-k9border text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p class="font-bold text-gray-400 uppercase tracking-widest">Escuela Canina Dian Kan K9 — Pasión por el K9</p>
+            <p>© 2026 Calle Puma 05, La Pradera, Querétaro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/524427786447?text=Hola!%20Quiero%20informes%20de%20Dian%20Kan%20K9" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-400 text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center transition-transform hover:scale-110 active:scale-95 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-bold text-sm ml-0 group-hover:ml-2">¡Escríbenos ahora!</span>
+    </a>
+
+</body>
+</html>
